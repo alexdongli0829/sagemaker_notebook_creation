@@ -59,7 +59,7 @@ aws iam attach-role-policy --role-name AWSGlueServiceNotebookRole-cliversion --p
 
 4. Create Glue endpoint
 
-aws glue create-dev-endpoint --endpoint-name sgnotebook_endpoint --role-arn arn:aws:iam::163629398585:role/GlueWithAllS3GetForTutorial --security-group-ids sg-02e66f98d412aca4c --subnet-id subnet-8128b0f6 --number-of-nodes 3 --public-key "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCbsbgru4GmUE3OVpDq6np+9KNtmjEHmTKwswI05/+EQtTo4tYOT3L9wafpOBGx3DJH+MK5DO0PVisCuSTQKrowRmqk/6IdtH0ZaSQ6UK/+HwPHhdTay1M2OnMihjm4ccLnpwwPk0cyBPDSH2uT1cBbSfFpiRUIAADPgK+8KSbHtuwaskp/sA5cOSWiIEKsStuESvCakDWMEaRznUUheGK5J4FOSpKo9w3OsAscoOY3ksf0e6OOUBtgTl2PENSIHTy0lSrKbG8jzNFAEDM5cimjPvcXvO/Xcx063zoR9Z8wMU28mm4MhO7KW332whbwL2qe0LH0EWMO/XN41gFN9k+h dongaws-sdy"
+aws glue create-dev-endpoint --endpoint-name sgnotebook_endpoint --role-arn arn:aws:iam::163629398585:role/GlueWithAllS3GetForTutorial --security-group-ids sg-02e66f98d412aca4c --subnet-id subnet-8128b0f6 --number-of-nodes 3 --public-key "xxxxxxxxxxxxxxxxxx"
 
 
 {
