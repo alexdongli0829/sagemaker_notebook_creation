@@ -1,0 +1,56 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Action": [
+                "s3:ListBucket"
+            ],
+            "Effect": "Allow",
+            "Resource": [
+                "arn:aws:s3:::dongaws"
+            ]
+        },
+        {
+            "Action": [
+                "s3:GetObject"
+            ],
+            "Effect": "Allow",
+            "Resource": [
+                "arn:aws:s3:::dongaws*"
+            ]
+        },
+        {
+            "Action": [
+                "logs:CreateLogStream",
+                "logs:DescribeLogStreams",
+                "logs:PutLogEvents",
+                "logs:CreateLogGroup"
+            ],
+            "Effect": "Allow",
+            "Resource": [
+                "arn:aws:logs:ap-southeat-2:163629398585:log-group:/aws/sagemaker/*",
+                "arn:aws:logs:ap-southeat-2:163629398585:log-group:/aws/sagemaker/*:log-stream:aws-glue-*"
+            ]
+        },
+        {
+            "Action": [
+                "glue:UpdateDevEndpoint",
+                "glue:GetDevEndpoint",
+                "glue:GetDevEndpoints"
+            ],
+            "Effect": "Allow",
+            "Resource": [
+                "arn:aws:glue:ap-southeat-2:163629398585:devEndpoint/*"
+            ]
+        },
+        {
+            "Action": [
+                "sagemaker:ListTags"
+            ],
+            "Effect": "Allow",
+            "Resource": [
+                "arn:aws:sagemaker:ap-southeat-2:163629398585:notebook-instance/*"
+            ]
+         }
+    ]
+}
